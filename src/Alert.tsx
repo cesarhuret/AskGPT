@@ -1,4 +1,4 @@
-import { AlertDialog, AlertDialogBody, AlertDialogCloseButton, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, Button, useDisclosure, useFocusEffect } from "@chakra-ui/react"
+import { AlertDialog, AlertDialogBody, AlertDialogContent, useDisclosure } from "@chakra-ui/react"
 import * as React from "react"
 
 export const AlertPopup = () => {
@@ -14,12 +14,13 @@ export const AlertPopup = () => {
           isOpen={isOpen}
           leastDestructiveRef={cancelRef}
           onClose={onClose}
-          colorScheme={'#1a202c'}
           autoFocus={false}
           size="sm"
         >
             <AlertDialogContent>
-                <AlertDialogBody>
+                <AlertDialogBody
+                    bgColor={'#1a202c'}
+                >
                     ChatGPT is currently on high demand, it is normal if the response is slow or returns an error. 
                 </AlertDialogBody>
             </AlertDialogContent>
