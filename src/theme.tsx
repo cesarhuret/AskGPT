@@ -2,6 +2,10 @@ import { color, extendTheme } from "@chakra-ui/react"
 import "@fontsource/montserrat";
 
 const theme = extendTheme({
+	config: {
+		initialColorMode: 'dark',
+		useSystemColorMode: false,
+	},
     styles: {
 		global: (props: any) => ({
 			body: {
