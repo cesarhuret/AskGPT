@@ -65,6 +65,7 @@ export const App = () => (
 						aria-label='github.com/cesarhuret'
 						icon={<FaGithub />}
 					/>
+					<ColorModeSwitcher/>
 				</HStack>
 			</Flex>
 			<Container maxH={'80vh'} maxW={'3xl'} alignContent={'center'} justifyContent={'center'}>
