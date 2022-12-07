@@ -17,6 +17,7 @@ import {
   Spacer,
   IconButton,
   Alert,
+  DarkMode,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
@@ -28,6 +29,7 @@ import { AlertPopup } from "./Alert"
 
 export const App = () => (
 	<ChakraProvider theme={theme}>
+		<DarkMode>
 		<AlertPopup/>
 		<Grid minH="90vh" p={0} mx={'3'}>
 			<Flex  w={'full'} alignItems={'center'} flexDirection={'row'} h={'6vh'}>
@@ -72,5 +74,6 @@ export const App = () => (
 				<Chat/>
 			</Container>
 		</Grid>
+		</DarkMode>
 	</ChakraProvider>
 )
