@@ -61,7 +61,7 @@ export const App = () => (
 					/>
 					<IconButton
 						as={Link}
-						href='https://github.com/cesarhuret/ask'
+						href='https://github.com/cesarhuret/AskGPT'
 						variant="ghost"
 						color="current"
 						aria-label='github.com/cesarhuret'
