@@ -14,6 +14,7 @@ export const AlertPopup = () => {
           isOpen={isOpen}
           leastDestructiveRef={cancelRef}
           onClose={onClose}
+          bgColor={'#1a202c'}
           autoFocus={false}
           size="sm"
         >
