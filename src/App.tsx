@@ -25,12 +25,10 @@ import { ChevronRightIcon, ArrowUpIcon, SearchIcon } from "@chakra-ui/icons"
 import theme from "./theme"
 import { Chat } from "./Chat"
 import { FaGithub, FaTwitter } from "react-icons/fa"
-import { AlertPopup } from "./Alert"
 
 export const App = () => (
 	<ChakraProvider theme={theme}>
 		<DarkMode>
-		<AlertPopup/>
 		<Grid minH="90vh" p={0} mx={'3'}>
 			<Flex  w={'full'} alignItems={'center'} flexDirection={'row'} h={'6vh'}>
 				<Text fontWeight={'bold'}>Ask ChatGPT</Text>
