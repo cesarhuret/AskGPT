@@ -44,7 +44,7 @@ export const Chat = () => {
 
         await setMessages(tempMessages)
         
-        const res = await fetch('https://docgpt.kesarx.repl.co/chat', {
+        const res = await fetch('https://chatgpt-api.kesarx.repl.co/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
